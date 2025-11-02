@@ -132,7 +132,7 @@ function Navbar({ link }) {
             </li>
           ))}
 
-          <Link to="/donate">
+          <Link to="/donate" onClick={toggle}>
             <button className="px-5 py-2 text-left md:text-center bg-yellow-900 text-white font-medium rounded-4xl hover:bg-yellow-800 transition duration-300 cursor-pointer">
               DONATE
             </button>
