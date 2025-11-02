@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import AboutHero from "./AboutHero";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -6,12 +6,13 @@ import {
   faHandsPraying,
   faHeart,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
 import FooterSection from "./FooterSection";
-// import { text } from "@fortawesome/fontawesome-svg-core";
 
 function AboutFullSection() {
-  const [showMore, setShowMore] = useState(false);
+  // Separate states for each "Read More" section
+  const [showMoreMission, setShowMoreMission] = useState(false);
+  const [showMoreOverseer, setShowMoreOverseer] = useState(false);
+
   const features = [
     {
       id: 1,
@@ -33,6 +34,29 @@ function AboutFullSection() {
       title: "Charity Work",
       description:
         "Our charity ministry is a channel of God’s mercy to the world. We believe that ministry goes beyond the pulpit. It’s about touching lives, restoring hope, and being the hands and feet of Jesus. Every act of kindness is a seed of transformation, planted to heal hearts and rebuild lives through the power of love. Participate in our charity events to help those in need.",
+    },
+  ];
+
+  const aboutGeneralOverseer = [
+    {
+      id: 1,
+      aboutHeader: "About Our General Overseer",
+      imageURL: "./aboutimage.jpeg",
+      text: "Our General Overseer, Rev'd Timothy Thompson, is a devoted servant of God with a burning passion to see lives transformed through the power of the Holy Spirit. Called by God to raise a people of purpose, purity, and power, he has faithfully dedicated his life to the ministry of the Gospel, teaching sound doctrine and demonstrating the love of Christ to all.",
+    },
+  ];
+
+  const secondParagraph = [
+    {
+      id: 2,
+      text: "Under his visionary leadership, Sanctuary Power Mission Church has continued to grow in grace. His commitment to prayer, the Word, and soul-winning has inspired many to walk closer with God and fulfill their divine destinies.",
+    },
+  ];
+
+  const thirdParagraph = [
+    {
+      id: 3,
+      text: "Through his ministry, countless souls have encountered the transforming power of God. His life remains a testament to humility, excellence, and unwavering faith in God’s promises.",
     },
   ];
 
@@ -73,14 +97,14 @@ function AboutFullSection() {
             </h3>
             <p className="pt-3">
               At Sanctuary Power Mission, we believe that no one is meant to
-              walk alone. We’re a family of faith where you can connect with God
+              walk alone. We're a family of faith where you can connect with God
               and with others who share your journey. Growth happens when we
-              stay rooted in God’s Word and surrounded by His people.
+              stay rooted in God's Word and surrounded by His people.
             </p>
 
-            {showMore && (
+            {showMoreMission && (
               <p className="text-gray-700 leading-relaxed mt-3 transition-all duration-500 ease-in-out">
-                Here, you’ll have opportunities to grow spiritually through
+                Here, you'll have opportunities to grow spiritually through
                 Bible studies, mentorship, and prayer sessions that strengthen
                 your faith and deepen your relationship with Christ. God has
                 placed unique gifts in every one of us. At Sanctuary Power
@@ -92,12 +116,60 @@ function AboutFullSection() {
             )}
 
             <button
-              onClick={() => setShowMore(!showMore)}
+              onClick={() => setShowMoreMission(!showMoreMission)}
               className="mt-4 px-5 py-2 bg-yellow-900 text-white font-medium rounded-4xl hover:bg-yellow-800 transition duration-300"
             >
-              {showMore ? "Read Less" : "Read More"}
+              {showMoreMission ? "Read Less" : "Read More"}
             </button>
           </div>
+        </div>
+      </section>
+
+      <section className="px-3 md:px-16 md:pt-20 bg-gray-100">
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 gap-8"
+          data-aos="fade-right"
+        >
+          <div>
+            {aboutGeneralOverseer.map((about) => (
+              <React.Fragment key={about.id}>
+                <h3 className="pt-3 text-2xl md:text-4xl font-bold uppercase">
+                  {about.aboutHeader}
+                </h3>
+                <p className="pt-3">{about.text}</p>
+              </React.Fragment>
+            ))}
+
+            {showMoreOverseer &&
+              secondParagraph.map((p) => (
+                <p key={p.id} className="pt-3">
+                  {p.text}
+                </p>
+              ))}
+
+            {showMoreOverseer &&
+              thirdParagraph.map((p) => (
+                <p key={p.id} className="pt-3">
+                  {p.text}
+                </p>
+              ))}
+
+            <button
+              onClick={() => setShowMoreOverseer(!showMoreOverseer)}
+              className="mt-4 px-5 py-2 bg-yellow-900 text-white font-medium rounded-4xl hover:bg-yellow-800 transition duration-300"
+            >
+              {showMoreOverseer ? "Read Less" : "Read More"}
+            </button>
+          </div>
+
+          {aboutGeneralOverseer.map((about) => (
+            <img
+              key={about.id}
+              src={about.imageURL}
+              alt={about.aboutHeader}
+              className="w-full h-auto rounded-lg mb-10 px:mb-20"
+            />
+          ))}
         </div>
       </section>
 

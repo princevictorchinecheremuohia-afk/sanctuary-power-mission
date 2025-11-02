@@ -82,7 +82,7 @@ function Navbar({ link }) {
 
       {/* Navigation Bar or Logo */}
       <div className="px-6 md:px-16 py-4 flex justify-between items-center bg-black/60  md:bg-black/0">
-        <h1 className="text-3xl font-bold md:text-2xl text-white">
+        <h1 className="text-xl font-bold md:text-2xl text-white">
           <img
             src="churchlogo.jpg"
             alt="Church Logo"
@@ -96,7 +96,7 @@ function Navbar({ link }) {
               <li key={link.id}>
                 <Link
                   to={link.href}
-                  className="hover:text-red-200 text-xl md:text-sm font-medium"
+                  className="hover:text-red-200 text-sm md:text-sm font-medium"
                 >
                   {link.name}
                 </Link>
@@ -124,7 +124,7 @@ function Navbar({ link }) {
             <li key={link.id}>
               <Link
                 to={link.href}
-                className="hover:text-red-200 cursor-pointer text-2xl md:text-xl font-medium"
+                className="hover:text-red-200 cursor-pointer text-sm md:text-sm font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
