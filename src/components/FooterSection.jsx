@@ -43,7 +43,7 @@ function FooterSection() {
 
   return (
     <footer className="FooterSection bg-black text-white py-10 md:px-16 md:py-20">
-      <div className="grid grid-cols-1 md:grid-cols-3 md:place-items-center px-3 gap-8 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:place-items-center px-1.5 gap-8 mb-8">
         <div className="w-full md:w-1/2">
           <h3 className="text-lg md:text-xl font-semibold mb-4">Contact Us</h3>
           <p className="mb-4">
@@ -51,7 +51,10 @@ function FooterSection() {
             32 Airport Rd, John Lion Company, Umuodukwu, River State.
           </p>
           <p className="mb-4">
-            <FontAwesomeIcon icon={faEnvelope} className="mr-1 break-words" />
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              className="mr-1 break-words max-w-2xl"
+            />
             Email: sanctuarypowermissionchurch@gmail.com
           </p>
           <p className="mb-4">
