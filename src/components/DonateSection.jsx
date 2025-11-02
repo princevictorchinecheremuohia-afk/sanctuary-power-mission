@@ -31,11 +31,12 @@ function DonateSection() {
               Church Bank Details
             </h3>
             <p className="text-gray-800">
-              <strong>Account Name:</strong> Sanctuary Power Mission Acct 1
+              <strong>Account Name:</strong> Sanctuary Power Mission Offering
+              Account
               <br />
               <strong>Bank:</strong> United Bank For Africa (UBA)
               <br />
-              <strong>Account Number:</strong> 1027702579
+              <strong>Account Number:</strong> 1027703363
             </p>
           </div>
 
