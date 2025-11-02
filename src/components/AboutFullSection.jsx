@@ -19,7 +19,7 @@ function AboutFullSection() {
       icon: faChurch,
       title: "Our Mission",
       description:
-        "Our mission is to reach the world with the love and power of Jesus Christ, transforming lives through the teaching of God’s Word, fervent prayer, and compassionate service. We are committed to raising a generation of believers who walk in holiness, purpose, and power. To spread love and kindness through community service.",
+        "Our mission is to reach the world with the love and power of Jesus Christ, transforming lives through the teaching of God’s Word, fervent prayer, and compassionate service. We are committed to raising a generation of believers who walk in holiness, purpose, and fear of God. To spread love and kindness through community service.",
     },
     {
       id: 2,
@@ -42,7 +42,7 @@ function AboutFullSection() {
       id: 1,
       aboutHeader: "About Our General Overseer",
       imageURL: "./aboutimage.jpeg",
-      text: "Our General Overseer, Rev'd Timothy Thompson, is a devoted servant of God with a burning passion to see lives transformed through the power of the Holy Spirit. Called by God to raise a people of purpose, purity, and power, he has faithfully dedicated his life to the ministry of the Gospel, teaching sound doctrine and demonstrating the love of Christ to all.",
+      text: "Our General Overseer, Rev'd Timothy Thompson, is a devoted servant of God with a burning passion to see lives transformed through the power of the Holy Spirit. Called by God to raise a people of purpose, purity and destiny, he has faithfully dedicated his life to the ministry of the Gospel, teaching sound doctrine and demonstrating the love of Christ to all.",
     },
   ];
 
