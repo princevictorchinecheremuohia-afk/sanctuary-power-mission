@@ -75,11 +75,6 @@ function ContactSection() {
     }
 
     try {
-      // Replace below with real API call when available.
-      // Example:
-      // await fetch('/api/contact', { method: 'POST', body: JSON.stringify(form), headers: { 'Content-Type': 'application/json' } });
-
-      // Simulate send
       const formData = new FormData();
       formData.append("access_key", "84dbee74-581b-4b85-84f4-56601ead862f");
       formData.append("name", form.name);
@@ -139,7 +134,6 @@ function ContactSection() {
             </div>
           ))}
 
-          {/* Make sure the grid keeps 3 columns; place a placeholder when needed */}
           {socialLinks.length < 3 &&
             Array.from({ length: 3 - socialLinks.length }).map((_, i) => (
               <div key={`ph-${i}`} />

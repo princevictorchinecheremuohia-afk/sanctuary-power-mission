@@ -53,7 +53,7 @@ function DonateSection() {
             “Give, and it shall be given unto you...” — Luke 6:38
           </p>
 
-          <p className="text-gray-700 mt-4">
+          <p className="text-gray-700 mt-4 wrap-break-word">
             For donation enquiries, contact us at <br />
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=sanctuarypowermissionchurch@gmail.com&su=Donation%20Support&body=God%20bless%20you%20for%20supporting%20the%20work%20of%20God%20at%20Sanctuary%20Power%20Mission."
