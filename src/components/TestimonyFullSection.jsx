@@ -74,7 +74,7 @@ function TestimonySection() {
             <div
               key={item.id}
               data-aos="fade-right"
-              className="bg-white p-6 rounded-lg shadow-md"
+              className="bg-white p-6 rounded-lg shadow-md flex flex-col justify-between items-center"
             >
               <p className="text-gray-800 text-sm md:text-base mb-4">
                 {item.text}

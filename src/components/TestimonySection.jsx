@@ -23,21 +23,21 @@ function TestimonySection() {
     {
       id: 3,
       text1:
-        "Praise the Lord! I want to thank God for making it possible for me to travel to the village to see my dad, despite how bad and rough the road was — He granted me journey mercies. I also want to thank God because after Daddy’s prayers, I received financial help from someone I least expected. I just want to say, thank You Lord for Your goodness and faithfulness!",
+        "Praise the Lord! I want to thank God for making it possible for me to travel to the village to see my dad, despite how bad and rough the road was He granted me journey mercies. I also want to thank God because after Daddy’s prayers, I received financial help from someone I least expected. I just want to say, thank You Lord for Your goodness and faithfulness!",
       text2: "Wisdom",
     },
 
     {
       id: 4,
       text1:
-        "Praise the Lord Church! My name is Happiness Mbonu. I just want to thank the God of this commission for restoring my sales. During one of our Wednesday services, Daddy declared that customers would locate us. I keyed into that declaration, and right there in church, my phone rang — it was one of my customers! It had been a while since I made any sales, but God showed up for me. I’ve come to say, thank You Jesus!",
+        "Praise the Lord Church! My name is Happiness Mbonu. I just want to thank the God of this commission for restoring my sales. During one of our Wednesday services, Daddy declared that customers would locate us. I keyed into that declaration, and right there in church, my phone rang it was one of my customers! It had been a while since I made any sales, but God showed up for me. I’ve come to say, thank You Jesus!",
       text2: "Happiness .M.",
     },
 
     {
       id: 5,
       text1:
-        "Praise the Lord! I’m here to appreciate God for bringing my son back to life. He suddenly fainted and stopped breathing — my husband and I thought we had lost him. But as we prayed and called on God, He answered us, and our boy regained consciousness! I sincerely thank God because if not for Him, my son wouldn’t be here today. Thank You, Jesus!",
+        "Praise the Lord! I’m here to appreciate God for bringing my son back to life. He suddenly fainted and stopped breathing, my husband and I thought we had lost him. But as we prayed and called on God, He answered us, and our boy regained consciousness! I sincerely thank God because if not for Him, my son wouldn’t be here today. Thank You, Jesus!",
       text2: "Mrs. HopeKing",
     },
   ];
@@ -65,7 +65,7 @@ function TestimonySection() {
         {testimonies.map((testimony) => (
           <SwiperSlide key={testimony.id}>
             <div
-              className="bg-white p-6 rounded-lg shadow-md text-gray-800"
+              className="bg-white p-6 rounded-lg shadow-md text-gray-800 h-120 flex flex-col justify-between md:flex md:flex-col md:justify-between md:h-60"
               data-aos="fade-right"
             >
               <p className="leading-relaxed">{testimony.text1}</p>
