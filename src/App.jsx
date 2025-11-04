@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Preloader from "./components/preloader";
+import Preloader from "./components/reloader";
 import HeaderHero from "./components/HeaderHero";
 import Home from "./components/Home";
 import AboutFullSection from "./components/AboutFullSection";

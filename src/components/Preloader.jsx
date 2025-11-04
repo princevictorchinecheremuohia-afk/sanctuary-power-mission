@@ -1,12 +1,10 @@
 import React from "react";
-import { motion } from "framer-motion";
-import logo from "../assets/churchlogo.jpg";
 
 function Preloader() {
   const preLoader = [
     {
       id: 1,
-      imageURL: logo,
+      imageURL: "./churchlogo.jpg",
       imageTitle: "logo",
       text: "Be still, and know that I am God - Psalms 46:10",
     },
@@ -17,9 +15,8 @@ function Preloader() {
       <div className="flex flex-col items-center justify-center h-screen bg-white text-center">
         {preLoader.map((loader) => (
           <div key={loader.id} className="preLoader flex flex-col items-center">
-            {/* Spinner wrapping around the logo */}
             <div className="relative flex items-center justify-center mb-10">
-              <div className="absolute w-24 h-24 border-4 border-yellow-800 border-t-transparent rounded-full animate-spin"></div>
+              <div className="absolute w-24 h-24 border-4 border-yellow-800 border-t-transparent rounded-full animate-spin text-center"></div>
               <img
                 src={loader.imageURL}
                 alt={loader.imageTitle}
@@ -36,5 +33,4 @@ function Preloader() {
     </>
   );
 }
-
 export default Preloader;
