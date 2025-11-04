@@ -1,5 +1,13 @@
-import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+  BrowserRouter,
+} from "react-router-dom";
+import Preloader from "./components/preloader";
 import Home from "./components/Home";
 import HeaderHero from "./components/HeaderHero";
 // import Hero from "./components/Hero";
@@ -17,24 +25,52 @@ import DonateSection from "./components/DonateSection";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-function App() {
+function AnimatedRoutes() {
+  const location = useLocation();
+  const [loading, setLoading] = useState(location.pathname === "/");
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setLoading(true);
+      const timer = setTimeout(() => setLoading(false), 2000);
+      return () => clearTimeout(timer);
+    } else {
+      setLoading(false);
+    }
+  }, [location.pathname]);
+
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
   return (
-    <Router>
-      <HeaderHero />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutFullSection />} />
-        <Route path="/events" element={<EventFullSection />} />
-        <Route path="/testimonies" element={<TestimonyFullSection />} />
-        <Route path="/gallery" element={<GalleryFullSection />} />
-        <Route path="/contact" element={<ContactSection />} />
-        <Route path="/donate" element={<DonateSection />} />
-      </Routes>
-    </Router>
+    <>
+      {loading ? (
+        <Preloader />
+      ) : (
+        <>
+          <HeaderHero />
+
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutFullSection />} />
+            <Route path="/events" element={<EventFullSection />} />
+            <Route path="/testimonies" element={<TestimonyFullSection />} />
+            <Route path="/gallery" element={<GalleryFullSection />} />
+            <Route path="/contact" element={<ContactSection />} />
+            <Route path="/donate" element={<DonateSection />} />
+          </Routes>
+        </>
+      )}
+    </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <AnimatedRoutes />
+    </BrowserRouter>
   );
 }
 
