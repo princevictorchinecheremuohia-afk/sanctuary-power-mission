@@ -40,7 +40,9 @@ function DonateSection() {
               <strong>Account Number:</strong> 1027702579
             </p>
 
-            <h4 className="text-xl font-semibold mt-3">OFFERING ACCOUNT</h4>
+            <h4 className="text-xl font-semibold mt-4 md:mt-3">
+              OFFERING ACCOUNT
+            </h4>
             <p className="text-gray-800">
               <strong>Account Name:</strong> Sanctuary Power Mission Acct 2
               <br />
@@ -49,7 +51,9 @@ function DonateSection() {
               <strong>Account Number:</strong> 1027703363
             </p>
 
-            <h4 className="text-xl font-semibold mt-3">SEED SOWING ACCOUNT</h4>
+            <h4 className="text-xl font-semibold mt-4 md:mt-3">
+              SEED SOWING ACCOUNT
+            </h4>
             <p className="text-gray-800">
               <strong>Account Name:</strong> Sanctuary Power Mission Acct 3
               <br />
@@ -58,7 +62,7 @@ function DonateSection() {
               <strong>Account Number:</strong> 1027703631
             </p>
 
-            <h4 className="text-xl font-semibold mt-3">
+            <h4 className="text-xl font-semibold mt-4 md:mt-3">
               USD ACCOUNT (DOLLAR ACCOUNT)
             </h4>
             <p className="text-gray-800">

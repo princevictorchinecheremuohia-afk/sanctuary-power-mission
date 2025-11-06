@@ -16,7 +16,7 @@ function AboutSection() {
       icon: faChurch,
       title: "Our Mission",
       description:
-        "Our mission is to reach the world with the love and power of Jesus Christ, transforming lives through the teaching of God’s Word, fervent prayer, and compassionate service. We are committed to raising a generation of believers who walk in holiness, purpose, and power. To spread love and kindness through community service.",
+        "Our mission is to reach the world with the love and power of Jesus Christ, transforming lives through the teaching of God’s Word, fervent prayer, and compassionate service. We are committed to raising a generation of believers who walk in holiness, purpose, and fear of God. To spread love and kindness through community service.",
     },
     {
       id: 2,
