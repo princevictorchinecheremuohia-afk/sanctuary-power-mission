@@ -30,13 +30,43 @@ function DonateSection() {
             <h3 className="text-2xl font-semibold text-yellow-900 mb-3">
               Church Bank Details
             </h3>
+
+            <h4 className="text-xl font-semibold">TITHE ACCOUNT</h4>
             <p className="text-gray-800">
-              <strong>Account Name:</strong> Sanctuary Power Mission Offering
-              Account
+              <strong>Account Name:</strong> Sanctuary Power Mission Acct 1
+              <br />
+              <strong>Bank:</strong> United Bank For Africa (UBA)
+              <br />
+              <strong>Account Number:</strong> 1027702579
+            </p>
+
+            <h4 className="text-xl font-semibold mt-3">OFFERING ACCOUNT</h4>
+            <p className="text-gray-800">
+              <strong>Account Name:</strong> Sanctuary Power Mission Acct 2
               <br />
               <strong>Bank:</strong> United Bank For Africa (UBA)
               <br />
               <strong>Account Number:</strong> 1027703363
+            </p>
+
+            <h4 className="text-xl font-semibold mt-3">SEED SOWING ACCOUNT</h4>
+            <p className="text-gray-800">
+              <strong>Account Name:</strong> Sanctuary Power Mission Acct 3
+              <br />
+              <strong>Bank:</strong> United Bank For Africa (UBA)
+              <br />
+              <strong>Account Number:</strong> 1027703631
+            </p>
+
+            <h4 className="text-xl font-semibold mt-3">
+              USD ACCOUNT (DOLLAR ACCOUNT)
+            </h4>
+            <p className="text-gray-800">
+              <strong>Account Name:</strong> Sanctuary Power Mission
+              <br />
+              <strong>Bank:</strong> United Bank For Africa (UBA)
+              <br />
+              <strong>Account Number:</strong> 2349771427
             </p>
           </div>
 
