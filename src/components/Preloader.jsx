@@ -16,11 +16,11 @@ function Preloader() {
         {preLoader.map((loader) => (
           <div key={loader.id} className="preLoader flex flex-col items-center">
             <div className="relative flex items-center justify-center mb-10">
-              <div className="absolute w-24 h-24 border-4 border-yellow-800 border-t-transparent rounded-full animate-spin text-center"></div>
+              <div className="absolute w-12 h-12 md:w-24 md:h-24 border-4 border-yellow-800 border-t-transparent rounded-full animate-spin text-center"></div>
               <img
                 src={loader.imageURL}
                 alt={loader.imageTitle}
-                className="w-16 h-16 object-cover rounded-full"
+                className="w-12 h-12 md:w-24 md:h-24 object-cover rounded-full"
               />
             </div>
 
