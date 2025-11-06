@@ -29,7 +29,7 @@ function Event() {
       ImageUrl: "./image-two.jpeg",
       title: "Image two",
       icon1: faCalendarDays,
-      date: "Mondays, 9:00am - 2:00pm",
+      date: "Mondays, 9:00am - 12:00pm",
       icon2: faLocationDot,
       actIcon: faClipboardList,
       activity: "Counselling",
