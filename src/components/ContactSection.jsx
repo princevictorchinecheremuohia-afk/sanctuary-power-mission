@@ -130,7 +130,7 @@ function ContactSection() {
                 />
               </div>
               <h3 className="font-bold text-xl mt-5">{link.title}</h3>
-              <p className="mt-2">{link.text}</p>
+              <p className="mt-2 wrap-break-word">{link.text}</p>
             </div>
           ))}
 

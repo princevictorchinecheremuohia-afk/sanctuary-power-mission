@@ -31,7 +31,7 @@ function DonateSection() {
               Church Bank Details
             </h3>
 
-            <h4 className="text-xl font-semibold">TITHE ACCOUNT</h4>
+            <h4 className="text-sm md:text-xl font-semibold">TITHE ACCOUNT</h4>
             <p className="text-gray-800">
               <strong>Account Name:</strong> Sanctuary Power Mission Acct 1
               <br />
@@ -40,7 +40,7 @@ function DonateSection() {
               <strong>Account Number:</strong> 1027702579
             </p>
 
-            <h4 className="text-xl font-semibold mt-4 md:mt-3">
+            <h4 className="text-sm md:text-xl font-bold mt-4 md:mt-3">
               OFFERING ACCOUNT
             </h4>
             <p className="text-gray-800">
@@ -51,7 +51,7 @@ function DonateSection() {
               <strong>Account Number:</strong> 1027703363
             </p>
 
-            <h4 className="text-xl font-semibold mt-4 md:mt-3">
+            <h4 className="text-sm md:text-xl font-bold mt-4 md:mt-3">
               SEED SOWING ACCOUNT
             </h4>
             <p className="text-gray-800">
@@ -62,7 +62,7 @@ function DonateSection() {
               <strong>Account Number:</strong> 1027703631
             </p>
 
-            <h4 className="text-xl font-semibold mt-4 md:mt-3">
+            <h4 className="text-sm md:text-xl font-bold mt-4 md:mt-3">
               USD ACCOUNT (DOLLAR ACCOUNT)
             </h4>
             <p className="text-gray-800">
